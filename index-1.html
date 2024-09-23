@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Game Portal Avançado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #1a1a1a;
+            color: #fff;
+            font-family: 'Roboto', sans-serif;
+        }
+        .neon-text {
+            color: #32ff7e;
+            text-shadow: 0 0 5px #32ff7e, 0 0 10px #32ff7e, 0 0 20px #32ff7e;
+        }
+        header, footer {
+            background-color: #0f0f0f;
+            padding: 1.5rem;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 1rem;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            color: #32ff7e;
+        }
+        .section-title {
+            text-transform: uppercase;
+            margin: 2rem 0;
+            font-size: 2rem;
+        }
+        .news-card, .review-card, .guide-card, .forum-card {
+            background-color: #252525;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .news-card img, .review-card img, .guide-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .review-bar {
+            background-color: #333;
+            height: 8px;
+            border-radius: 4px;
+            overflow: hidden;
+        }
+        .review-bar .filled {
+            background-color: #32ff7e;
+            height: 100%;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="neon-text text-4xl">Game Portal Avançado</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#noticias">Notícias</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#guias">Guias e Dicas</a>
+            <a href="#comunidade">Comunidade</a>
+            <a href="#login" class="btn-login">Login</a>
+            <a href="#register" class="btn-register">Registrar</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção de Notícias -->
+        <section id="noticias" class="p-10">
+            <h3 class="section-title neon-text">Últimas Notícias</h3>
+            <div class="news-card">
+                <img src="https://source.unsplash.com/random/800x400?game-news1" alt="Notícia 1">
+                <h4 class="text-xl">Lançamento do Jogo X</h4>
+                <p>O aguardado Jogo X será lançado no próximo mês com novos recursos incríveis.</p>
+                <a href="#">Leia Mais</a>
+            </div>
+            <div class="news-card">
+                <img src="https://source.unsplash.com/random/800x400?game-news2" alt="Notícia 2">
+                <h4 class="text-xl">Evento de eSports Anunciado</h4>
+                <p>Um dos maiores eventos de eSports do ano está chegando, com premiações recorde.</p>
+                <a href="#">Leia Mais</a>
+            </div>
+        </section>
+
+        <!-- Seção de Reviews -->
+        <section id="reviews" class="p-10">
+            <h3 class="section-title neon-text">Análises de Jogos</h3>
+            <div class="review-card">
+                <img src="https://source.unsplash.com/random/800x400?game-review1" alt="Review 1">
+                <h4 class="text-xl">Game A - Ação</h4>
+                <div class="review-bar"><div class="filled"></div></div>
+                <p>Um jogo com muita adrenalina e cenas de ação intensas. Prós: Gráficos. Contras: Dificuldade elevada.</p>
+            </div>
+            <div class="review-card">
+                <img src="https://source.unsplash.com/random/800x400?game-review2" alt="Review 2">
+                <h4 class="text-xl">Game B - Aventura</h4>
+                <div class="review-bar"><div class="filled" style="width: 85%;"></div></div>
+                <p>Uma jornada épica em um mundo aberto cheio de mistérios. Prós: História envolvente. Contras: Desempenho.</p>
+            </div>
+        </section>
+
+        <!-- Seção de Guias e Dicas -->
+        <section id="guias" class="p-10">
+            <h3 class="section-title neon-text">Guias e Dicas</h3>
+            <div class="guide-card">
+                <img src="https://source.unsplash.com/random/800x400?game-guide1" alt="Guia 1">
+                <h4 class="text-xl">Guia Completo de Jogo X</h4>
+                <p>Aprenda todos os truques e segredos de Jogo X com este guia completo.</p>
+                <a href="#">Acessar Guia</a>
+            </div>
+            <div class="guide-card">
+                <img src="https://source.unsplash.com/random/800x400?game-guide2" alt="Guia 2">
+                <h4 class="text-xl">Walkthrough de Jogo Y</h4>
+                <p>Passo a passo completo para zerar Jogo Y sem perder nenhum segredo.</p>
+                <a href="#">Acessar Walkthrough</a>
+            </div>
+        </section>
+
+        <!-- Seção de Comunidade -->
+        <section id="comunidade" class="p-10">
+            <h3 class="section-title neon-text">Fórum da Comunidade</h3>
+            <div class="forum-card">
+                <h4 class="text-xl">Tópico: Melhores jogos de 2024</h4>
+                <p>Discussão aberta sobre os melhores lançamentos deste ano.</p>
+                <a href="#">Participar da Discussão</a>
+            </div>
+            <div class="forum-card">
+                <h4 class="text-xl">Tópico: Dicas para Iniciantes</h4>
+                <p>Compartilhe suas dicas e truques para quem está começando agora no mundo dos games.</p>
+                <a href="#">Participar da Discussão</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Game Portal Avançado. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
